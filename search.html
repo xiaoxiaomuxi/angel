@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>搜索页</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum=1.0,user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="format-detection" content="telephone=no, email=no">
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta name="description" content="">
+<meta name="keywords" content="">
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/scroll.js"></script>
+<script>
+	(function() {
+		pageSize();
+	})()
+	window.onresize=function(){
+		pageSize();
+	}
+	function pageSize(){
+		var html=document.documentElement;
+		var html_w=html.getBoundingClientRect().width;
+		html.style.fontSize = html_w/15 +"px";
+	}
+</script>
+<link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+    	<img class="logo" src="images/logo.png">
+    	<button class="search_icon" id="search_icon" onclick="search()">ő</button>
+    	<div class="search">
+    		<input class="search_text" id="search_text" type="text" name="search" />
+    	</div>
+    	
+    </header>
+    <nav>
+    	<ul>
+    		<li class="item "><a href="index.html">首页</a></li>
+    		<li class="item active"><a href="#">搜索</a></li>
+    		<li class="item"><a href="move.html">详情</a></li>
+    		<li class="item"><a href="ranking.html">排行榜</a></li>
+    	</ul>
+    </nav>
+    <div class="scroll-wrap">
+    	<div class="page" id="page1"></div>
+    </div>
+<script type="text/javascript" src="js/search.js"></script>
+</body>
+</html>

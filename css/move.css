@@ -1,0 +1,139 @@
+@charset "UTF-8";
+/*初始化css*/
+body,ul,ol,li,p,img,div,input,a,nav,header,button{margin:0;padding:0;}
+input,button{
+	border:none;
+	outline: none;
+}
+img{border:none;}
+a{text-decoration:none;}
+ul li{list-style: none;}
+@font-face {
+        font-family: iconfont;
+        src: url(http://g.tbcdn.cn/tb/icon-font/1.1.5/iconfont.eot);
+        src: url(http://g.tbcdn.cn/tb/icon-font/1.1.5/iconfont.eot?#iefix) format("embedded-opentype"), url(http://g.tbcdn.cn/tb/icon-font/1.1.5/iconfont.woff) format("woff"), url(http://g.tbcdn.cn/tb/icon-font/1.1.5/iconfont.tff) format("truetype"), url(http://g.tbcdn.cn/tb/icon-font/1.1.5/iconfont.svg#uxiconfont) format("svg");
+    }
+html,body{
+	height: 100%;
+	display: block;
+}
+body{
+	background: url(../images/loading.gif) no-repeat center center;
+}
+/*header*/
+header{
+	padding: 0.24rem 0;
+	width: 100%;
+	background-color: #ff5000;
+	position: fixed;
+	left: 0;
+	top:0;
+}
+.logo,.search_icon{
+	width: 1.5rem;
+	height: 1.5rem;
+}
+.logo{
+	margin:0 0.24rem;
+	float:left;
+}
+.search_icon{
+	float: right;
+	font-family: iconfont;
+	font-size: 1rem;
+	font-style: normal;
+	margin-right: 0.24rem;
+	border-radius:0 0.3rem 0.3rem 0;
+	color: #ff5000;
+	background-color: rgba(0,0,0,0.5);
+}
+.search{
+	height: 1.5rem;
+	overflow: hidden;
+}
+.search_text{ 
+    width:100%;
+    height: 1.5rem;
+	background-color:rgba(0,0,0,0.5);
+	color:#ffffff;
+	padding: 0 5px;
+	border-radius: 0.3rem 0 0 0.3rem;
+	font-size: 0.8rem;
+}
+
+/*header结束*/
+/*nav*/
+nav{
+	background-color: #ff5000;
+	position: fixed;
+    right: 0;
+    bottom: 0;
+    width:100%;
+	height: 1.5rem;
+}
+nav>ul>.item{
+	width: 25%;
+	float: left;
+	text-align: center;
+	line-height: 1.5rem;
+	opacity: 0.5;
+}
+nav>ul>li>a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	font-size:0.7rem;
+	color: #fff;
+}
+nav>ul>.active{
+	opacity: 1;
+}
+/*nav 结束*/
+
+/*页面主体*/
+.scroll-wrap{
+	margin-top: 1.98rem;
+	margin-bottom: 1.5rem;
+}
+.scroll-wrap .page{
+	margin:0 auto;
+	padding-top: 0.5rem;
+	width: 80%;
+	height: 80%;
+}
+.poster{
+	width: 100%;
+	height: auto;
+}
+.title{
+	font-size: 0.984375rem;
+	color:#444;
+
+}
+
+.info{
+	font-size: 0.46875rem;
+	color: #888;
+	margin-top: 0.46875rem;
+}
+.info div p{
+	display:inline-block;
+	margin-top: 0.23rem;
+	margin-left: 0.46875rem;
+}
+
+.summary{
+	margin:0.703125rem auto;
+}
+
+.label{
+	display: block;
+}
+
+.content{
+	text-indent: 0.9375rem;
+	color:#666;
+	font-size:0.46875rem;
+	line-height: 0.8rem;
+	padding:0.23438rem;
+}
