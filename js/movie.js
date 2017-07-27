@@ -61,7 +61,6 @@ $(function() {
                 success: function(data) {
                     var result = '';
                     index++;
-                    console.log(index);
                     var movies = data.subjects;
                     for (var i = 0; i < data.subjects.length; i++) {
                         result += "<a id='" + movies[i].id + "' href='#' onclick='show(this)'>" +
