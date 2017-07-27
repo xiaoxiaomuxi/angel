@@ -107,7 +107,6 @@
         // 加载下方
         me.$scrollArea.on('scroll',function(){
             me._scrollTop = me.$scrollArea.scrollTop();
-            console.log(1);
             // 滚动页面触发加载数据
             if(me.opts.loadDownFn != '' && !me.loading && !me.isLockDown && (me._scrollContentHeight - me._threshold) <= (me._scrollWindowHeight + me._scrollTop)){
                 loadDown(me);
@@ -218,9 +217,6 @@
         me.$domDown.html(me.opts.domDown.domLoad);
         me.loading = true;
         me.opts.loadDownFn(me);
-        console.log(me._scrollContentHeight);
-        console.log(me._threshold);
-        console.log(me._scrollWindowHeight);
 
     }
 
