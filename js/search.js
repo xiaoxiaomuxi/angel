@@ -26,7 +26,6 @@ $(function() {
                 dataType: 'JSONP',
                 url: "https://api.douban.com/v2/movie/search?q="+str,
                 success: function(data) {
-                    console.log(data);
                     var result = '';
                     var movies = data.subjects;
                     for (var i = 0; i < data.subjects.length; i++) {
